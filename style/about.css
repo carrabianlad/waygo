@@ -1,0 +1,44 @@
+.about{
+    height: 90vh;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.head{
+  font-size: 110px;
+  font-family: inria sans;
+  margin: 20px;
+}
+.blue{
+  color:#014AAB ;
+}
+.map{
+  width: 30vw;
+  margin: 20px;
+  border-radius: 20px;
+  animation: fadeInGlowblow  0.7s ease-in forwards;
+}
+.main{
+  display: flex;
+  align-items: center;
+}
+.paragraph{
+  width: 40vw;
+  margin: 20px;
+  margin-top: 20px;
+  right: 20px;
+  font-size: 27px;
+  text-align: center;
+  font-family: inria sans;
+}
+@keyframes fadeInGlowblow {
+  from {
+      opacity: 0;
+      box-shadow: 0 0 0px rgba(0, 72, 255, 0.7);
+  }
+  to {
+      opacity: 1;
+      box-shadow: 0 0 30px 10px rgba(0, 30, 255, 0.9); /* Strong blue glow */
+  }
+}
