@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holi Party 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff7eb3, #ff758c);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        .details {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .countdown {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        .buy-pass {
+            background: yellow;
+            color: black;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .buy-pass:hover {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Holi Party 2025 🎉</h1>
+        <p class="details">Join us for the biggest Holi pool party!<br>
+        📍 Stargate Villa, K Golahalli, Bangalore<br>
+        🗓️ March 14, 2025 | ⏰ 11:00 AM</p>
+        
+        <div class="countdown" id="countdown"></div>
+        
+        <button class="buy-pass" onclick="buyPass()">Buy Your Pass Now</button>
+    </div>
+    
+    <script>
+        function updateCountdown() {
+            const eventDate = new Date("March 14, 2025 11:00:00").getTime();
+            const now = new Date().getTime();
+            const timeLeft = eventDate - now;
+            
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            document.getElementById("countdown").innerHTML = `⏳ ${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        function buyPass() {
+            alert("Redirecting to payment...");
+            window.location.href = "payment.html";
+        }
+    </script>
+</body>
+</html>
