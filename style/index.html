@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>WayGo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style/imports.css">
+    <link rel="stylesheet" href="style/landing.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            animation: fadeIn 0.7s ease-in forwards;
+            animation-delay: 3s;
+            box-shadow: 0 0 70px rgb(0, 0, 0);
+            z-index: 1000;
+        }
+
+        #popup img {
+            width: 300px;
+            height: auto;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #close-btn {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            text-shadow: 20px 20px 20px rgb(0, 68, 255);
+            cursor: pointer;
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(0, 102, 255);
+            animation: Glow 0.7s ease-in forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="popup">
+        <span id="close-btn">&times;</span>
+        <img src="assets/39+ Fun Last-Minute Date Ideas for an Unforgettable Night Together!.jpg" alt="Popup Image"
+            id="popup-img">
+    </div>
+    <button id="hambtn" style="z-index: 10;"> <img src="assets/icons8-hamburger-menu-32.png" alt=""></button>
+
+    <!-- Sliding Menu -->
+    <div id="menu">
+        <li class="list"> <a href="" class="link" id="list1"> START-PLANNING⤵</a></li>
+        <li class="list"> <a href="" class="link" id="list2"> HOME</a></li>
+        <li class="list"> <a href="" class="link" id="list3"> ABOUT</a></li>
+    </div>
+    <div class="landing">
+
+        <!-- navbar -->
+
+        <div class="nav">
+            <img src="assets/image 1.png" alt="logo" id="logo">
+            <div id="midnav">
+                <li class="list"> <a href="" class="link" id="list1"> START-PLANNING⤵</a></li>
+                <li class="list"> <a href="" class="link" id="list2"> HOME</a></li>
+                <li class="list"> <a href="" class="link" id="list3"> ABOUT</a></li>
+            </div>
+            <div id="sidenav">
+                <button class="btn">Contact us </button>
+                <button class="btn">Log in</button>
+            </div>
+            <!-- <div class="hamburger"> <img src="assets/hamburger-5-svgrepo-com.svg" alt="" id="hambu"> </div> -->
+            <!-- Hamburger Menu -->
+            <!-- Hamburger Button with Image Inside -->
+
+
+
+
+        </div>
+
+        <!-- home -->
+
+        <div class="home">
+            <div class="text">
+                <h1 class="heading">Way<span class="go">go</span></h1>
+                <p class="para">Discover the best spots, hidden gems, and unique experiencesfor your next outing.
+                    Whether it’s a romantic date, a weekend getaway, or a fun <br>adventure,
+                    we’ve got you covered. Let us take the hassle <br>out of planning
+                    —just pick, book, and enjoy!</p>
+                <p class="text2">✨ Handpicked Experiences | 🎟️ Easy Bookings | 📍 Local Insights</p>
+                <div class="btns">
+                    <button class="buttons" id="explore">Explore</button>
+                    <br>
+                    <button class="buttons" id="Premiere">Premiere</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <!-- about us -->
+    <div class="about">
+        <h1 class="head">About<span class="blue">Us</span></h1>
+        <div class="main">
+            <img src="assets/citymap.jpg" alt="" class="map">
+            <div class="paragraph">
+                <p> At Waygo, we specialize in creating fully customized trips for every occasion, whether it’s a
+                    romantic date, birthday surprise, weekend getaway, family vacation, or a peaceful nature escape. We
+                    take care of every detail, ensuring a seamless experience tailored to your preferences, schedule,
+                    and vibe.
+                    With no hidden fees, we handle everything from pre-reserved dinner tables to flexible pick-up and
+                    drop-off services, making sure all your expectations are met. This Valentine’s Day, make it extra
+                    special with our exclusive package, and let us handle the logistics while you focus on making
+                    unforgettable memories with your loved one. Whether it’s a cozy dinner or a getaway, we’ll make sure
+                    everything is taken care of for you.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("popup-img").addEventListener("click", function () {
+            window.location.href = "holi.html";
+        });
+
+        document.getElementById("close-btn").addEventListener("click", function () {
+            document.getElementById("popup").style.display = "none";
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
