@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+.rubik-moonrocks-regular {
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.main{
+
+    /* background-image: url('/waygo/assets/Happy\ Holi\ Ai\ Photo\ Generator.JPG'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background: rgba(7, 4, 4, 0.575);
+/* background: radial-gradient( #2193b0, #0f1010);  */
+
+    /* filter: brightness(0.6); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    /* top: 40%; */
+    /* position: absolute; */
+}
+.heading{
+    top: 20%;
+    font-size: 80px;
+    /* position: absolute; */
+    font-family: "Rubik Moonrocks", sans-serif;
+    animation: pulseGlow 2s infinite alternate ease-in-out;
+}
+.texts{
+    display: flex;
+    align-items: right;
+    width: 50vw;
+    flex-direction: column;
+    font: Rubik Moonrocks;
+    font-family: "Rubik Moonrocks", sans-serif;
+    margin: 15px;
+    top: 50%;
+    /* position: absolute; */
+    right: 10px;
+    font-size: 30px;
+}
+.dropshadow{
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.749);
+}
+.aln{
+    text-align: center;
+    font-family: inria sans;
+}
+.white{
+    color: white;
+}
+
+  .countdown{
+    font-size: 50px;
+    color: orange;
+    top: 50%;
+    /* position: absolute; */
+    left: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.749);
+  }
+  .buy-pass{
+    font-size: 50px;
+    color: rgb(0, 255, 229);
+    top: 70%;
+    border-radius: 20px;
+    background: black;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.749);
+    /* position: absolute; */
+    left: 20px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures the video covers the whole screen */
+    z-index: -1; /* Sends it to the background */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20vh;
+}

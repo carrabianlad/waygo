@@ -100,3 +100,59 @@
         /* background-position: 0%; */
     }
 }
+@media(max-width:1065px)
+{
+    .texts{
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        flex-direction: column;
+        font: Rubik Moonrocks;
+        font-family: "Rubik Moonrocks", sans-serif;
+        top: 50%;
+        /* position: absolute; */
+        /* right: 10px; */
+        justify-content: center;
+        font-size: 30px;
+    }
+    .aln{
+        text-align: center;
+    }
+    .countdown{
+        font-size: 50px;
+        color: orange;
+        top: 80%;
+        /* position: absolute; */
+        left: 20px;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.749);
+      }
+      .buy-pass{
+        font-size: 50px;
+        color: rgb(0, 183, 255);
+        top: 70%;
+        border-radius: 20px;
+        background: black;
+        padding: 10px;
+        border: none;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.749);
+        /* position: absolute; */
+        left: 20px;
+      }
+}
+@media(max-width:840px)
+{
+    .heading{
+        font-size: 50px;
+        align-items: center;
+
+    }
+    .main{
+        align-items: center;
+        text-align: center;
+    }
+    .texts{
+        top:35%;
+        font-size: 20px;
+    }
+
+}
