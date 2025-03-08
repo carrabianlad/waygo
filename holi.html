@@ -3,78 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holi Party 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>WAYGO PRESENTS: HOLI BASH 2025!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(to right, #ff7eb3, #ff758c);
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3rem;
-        }
-        .details {
-            font-size: 1.2rem;
-            margin: 20px 0;
-        }
-        .countdown {
-            font-size: 2rem;
-            margin: 20px 0;
-        }
-        .buy-pass {
-            background: yellow;
-            color: black;
-            padding: 15px 30px;
-            font-size: 1.5rem;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .buy-pass:hover {
-            background: orange;
-        }
-    </style>
+
+    <link rel="stylesheet" href="style/holi.css">
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/imports.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Holi Party 2025 🎉</h1>
-        <p class="details">Join us for the biggest Holi pool party!<br>
-        📍 Stargate Villa, K Golahalli, Bangalore<br>
-        🗓️ March 14, 2025 | ⏰ 11:00 AM</p>
-        
-        <div class="countdown" id="countdown"></div>
-        
-        <button class="buy-pass" onclick="buyPass()">Buy Your Pass Now</button>
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="assets/1ffd1887a0e8ecffc0a3d65f0cc7afb7.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  <div class="main">
+    <h1 class="heading dropshadow white">WAYGO PRESENTS: HOLI BASH 2025!</h1>
+    <div class="texts">
+        <p class="dropshadow white aln">Get Ready for the Biggest Holi Party in Your College!</p>
+        <p class="dropshadow white aln">Join us for an unforgettable Holi celebration filled with vibrant colors, electrifying music, and endless fun! This year, Waygo brings you the ultimate Holi Bash 2025 at your college, featuring:</p>
+        <p class="dropshadow white aln">Secure your spot by registering online. Once registered, you'll receive a QR Code for payment. After completing the payment, your entry receipt will be sent via email & SMS.
+
+            🚀 Limited Passes Available! Don’t Miss Out!</p>
     </div>
-    
-    <script>
-        function updateCountdown() {
-            const eventDate = new Date("March 14, 2025 11:00:00").getTime();
-            const now = new Date().getTime();
-            const timeLeft = eventDate - now;
-            
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-            
-            document.getElementById("countdown").innerHTML = `⏳ ${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
+    <div class="countdown" id="countdown"></div>
+    <button class="buy-pass" data-tally-open="wAyLMD" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Buy Your Pass Now</button>
+</div>
+  </div>
         
-        function buyPass() {
-            alert("Redirecting to payment...");
-            window.location.href = "payment.html";
-        }
-    </script>
+      
+    
+    <script src="script2.js"></script>
 </body>
 </html>
